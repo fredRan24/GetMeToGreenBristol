@@ -1,0 +1,154 @@
+/* --------------------------- The Container Classes --------------------------- */
+
+.container {
+    display: grid;
+    height: 100vh;
+  
+    /* basic three column layout*/
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    position:-webkit-sticky;
+    background: rgba(152, 196, 234, 255);
+    grid-column: 1 / 4;
+    color: white;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+}
+
+.left-sidebar {
+    grid-column: 1/2;
+    background-color: rgba(37, 170, 115, 0.685);
+    width: 350px;
+    padding: 1rem;
+    border-width: 2px;
+    border-style: groove;
+    border-top: none;
+    border-bottom: none;
+    border-color: black;
+}
+
+main {
+    width: auto;
+    height: auto;
+    background-image: url("landscape.jpg");
+    background-color: #cccc;
+}
+
+footer {
+    background: rgba(152, 196, 234, 255);
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    color: white;
+    border-style: groove;
+    border-color: black;
+}
+
+/* --------------------------- Text Related Items --------------------------- */
+/* Heading Font Info */
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma;
+    color: rgb(255, 255, 255);
+}
+
+/* paragraph text font family */
+.ptext {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.jl-title {
+    font-family:Arial;
+    font-size:38px;
+    font-weight: bolder;
+    color: rgb(73, 49, 17);
+    float: left;
+    margin-left: 30px;
+}
+
+p {
+    padding: 3px;
+    width:330px;
+    height:1000px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    background-image: url("green-notepad.png");
+    background-color: rgb(147, 226, 189);
+}
+
+.body-content {
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+
+
+/* --------------------------- Content Elements --------------------------- */
+
+#logo-image {
+    vertical-align: top; 
+    position:relative; 
+    display: inline-block; 
+    float: left;
+    margin:7px 0px 0px 7px;
+    width:5%; 
+    background:none;
+}
+  
+#tree-map, #allotment-map, #tree-table {
+    width: 1270px;
+    height: 500px;
+    border-width:2px;
+    border-color: rgb(255, 255, 255);
+}
+
+/* --------------------------- Buttons --------------------------- */
+
+button {
+    width: 337px;
+    outline-style: ridge;
+    outline-width: 2px;
+    outline-color: black;
+    background-color: #04AA6D;
+}
+
+/* --------------------------- Navigation Bar --------------------------- */
+
+.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 51%;
+    padding-top: 6px;
+    background:none;
+  }
+  
+.topnav a {
+    font-size: large;
+    font-family: sans-serif;
+    align-self: auto;
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background:none;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #04AA6D;
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    color: rgb(0, 0, 0);
+}
